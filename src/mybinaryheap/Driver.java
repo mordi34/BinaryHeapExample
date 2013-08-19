@@ -42,7 +42,7 @@ public class Driver
             System.out.println(mbh.pop());
         }
         System.out.println("---------------------------------");
-        
+
         System.out.println(mbh.peek());
 
     }

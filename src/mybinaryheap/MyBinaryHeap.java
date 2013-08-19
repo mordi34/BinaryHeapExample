@@ -45,11 +45,17 @@ public class MyBinaryHeap<T extends Comparable>
 
     public T pop()
     {
-        T rootVal = heap.get(0);
+        if (heap.isEmpty())
+        {
+            return null;
+        } else
+        {
+            T rootVal = heap.get(0);
 
-        removeRoot();
+            removeRoot();
 
-        return rootVal;
+            return rootVal;
+        }
     }
 
     /**
